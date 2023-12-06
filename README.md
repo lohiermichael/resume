@@ -10,3 +10,9 @@ The design is taken from
 Here is the result:
 
 ![English resume](./michael_lohier_resume.png)
+
+About me
+--------
+
+- [LinkedIn](https://www.linkedin.com/in/lohiermichael)
+- [GitHub](https://github.com/lohiermichael)
