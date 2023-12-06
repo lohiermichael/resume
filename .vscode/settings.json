@@ -1,14 +1,24 @@
 {
-  "cSpell.language": "en-US",
+  "cSpell.language": "fr",
   "cSpell.words": [
+    "Angular",
     "Appygas",
+    "Bird",
     "Cognite",
+    "Flappy",
+    "Flask",
     "linkedin",
     "lohier",
     "Lycée",
     "michael",
+    "MPSI",
     "Numpy",
-    "TWAMP"
+    "Prometheus",
+    "React",
+    "scientist",
+    "Solidity",
+    "TWAMP",
+    "WIND"
   ],
   "esbonio.sphinx.confDir": ""
 }
