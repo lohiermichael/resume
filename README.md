@@ -9,4 +9,4 @@ The design is taken from
 
 Here is the result:
 
-![English resume](./english_template/michael_lohier_resume.png)
+![English resume](./michael_lohier_resume.png)
