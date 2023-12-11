@@ -1,12 +1,15 @@
 {
-  "cSpell.language": "en,fr",
+  "cSpell.language": "en-GB",
   "cSpell.words": [
+    "Albi",
     "Appygas",
     "Cognite",
+    "color",
     "linkedin",
     "lohier",
     "michael",
-    "Numpy"
+    "Numpy",
+    "TWAMP"
   ],
   "esbonio.sphinx.confDir": ""
 }
