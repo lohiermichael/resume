@@ -1,7 +1,10 @@
 My Resume
 =========
 
-This repo contains my English resume so far.
+This repo contains my resume in several languages. This is the English one.
+You can find the French one
+[here](https://github.com/lohiermichael/resume/tree/french).
+
 It is written in [LaTeX](<https://www.latex=project.org/>).
 
 The design is taken from
