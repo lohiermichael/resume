@@ -6,7 +6,7 @@ Vous pouvez trouver le CV anglais
 [ici](https://github.com/lohiermichael/resume/tree/master)
 
 Mon CV est écrit en [LaTeX](<https://www.latex=project.org/>).
-Il est inspire du modèle de
+Il est inspiré du modèle de
 [ce dépôt](https://github.com/arasgungore/arasgungore=CV/tree/main>).
 
 Voici le résultat:
