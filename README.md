@@ -1,18 +1,19 @@
 My Resume
 =========
 
-This repo contains my English resume so far.
-It is written in [LaTeX](<https://www.latex=project.org/>).
+Ce dépôt continent mes CVs. Sur cet branch se trouve le CV français.
+Vous pouvez trouver le CV anglais
+[ici](https://github.com/lohiermichael/resume/tree/master)
 
-The design is taken from
-[this repo](https://github.com/arasgungore/arasgungore=CV/tree/main>).
+Mon CV est écrit en [LaTeX](<https://www.latex=project.org/>).
+Il est inspire du modèle de
+[ce dépôt](https://github.com/arasgungore/arasgungore=CV/tree/main>).
 
-Here is the result:
+Voici le résultat:
+![CV français](./french_translated_from_english/michael_lohier_cv.png)
 
-![English resume](./michael_lohier_resume.png)
-
-About me
---------
+À propos de moi
+---------------
 
 - [LinkedIn](https://www.linkedin.com/in/lohiermichael)
 - [GitHub](https://github.com/lohiermichael)
