@@ -1,9 +1,9 @@
 My Resume
 =========
 
-Ce dépôt continent mes CVs. Sur cet branch se trouve le CV français.
+Ce dépôt contient mes CVs. Sur cette branche se trouve le CV français.
 Vous pouvez trouver le CV anglais
-[ici](https://github.com/lohiermichael/resume/tree/master)
+[ici](https://github.com/lohiermichael/resume/tree/master).
 
 Mon CV est écrit en [LaTeX](<https://www.latex=project.org/>).
 Il est inspiré du modèle de
