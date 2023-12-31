@@ -13,7 +13,7 @@ The design is taken from
 
 Here is the result:
 
-![English resume](./michael_lohier_resume.png)
+![English resume](./english/michael_lohier_resume.png)
 
 About me
 --------
