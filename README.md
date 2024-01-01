@@ -11,7 +11,7 @@ Il est inspiré du modèle de
 
 Voici le résultat:
 
-![CV français](./french_with_english_format/michael_lohier_cv.png)
+![CV français](./french_with_french_format/michael_lohier_cv.png)
 
 À propos de moi
 ---------------
