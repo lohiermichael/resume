@@ -1,6 +1,6 @@
 %-------------------------
-% Resume in Latex
-% Author : Michael Lohier
+% CV in Latex
+% Auteur : Michael Lohier
 % License : MIT
 %------------------------
 
@@ -16,10 +16,14 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{xcolor}
 \input{glyphtounicode}
 
 
@@ -125,25 +129,38 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  CV COMMENCE ICI  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-%---------- HEADING ----------
+%---------- PHOTO ----------
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node[
+    anchor=north west, inner sep=-9pt, draw=gray, line width=1.2pt, circle
+  ] at ([xshift=1cm, yshift=-1.5cm]current page.north west)
+  {
+    \includegraphics[width=2.5cm, height=2.5cm, keepaspectratio]{profile_cv_zoomed.png}
+  };
+\end{tikzpicture}
+
+%---------- TITRE ----------
 
 \begin{center}
     \textbf{\Huge \scshape Michael Lohier} \\ \vspace{5pt}
-    {\LARGE \scshape Software Engineer} \\ \vspace{3pt}
+    {\LARGE \scshape Développeur Backend Python} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:33771827106}{+337 71 82 71 06}
+    \faMobile \hspace{.5pt} \href{
+      tel:33771827106
+    }{07 71 82 71 06}
     $|$
     \faAt \hspace{.5pt} \href{
       mailto:lohiermichael@gmail.com
     }{lohiermichael@gmail.com}
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{
-      https://www.linkedin.com/in/lohiermichael/?locale=en_US
+      https://www.linkedin.com/in/lohiermichael/?locale=fr
     }{LinkedIn}
     $|$
     \faGithub \hspace{.5pt} \href{https://github.com/lohiermichael}{GitHub}
@@ -151,165 +168,178 @@
     \faMapMarker \hspace{.5pt} \href{
       https://www.google.com/maps/place/Paris/@48.8588255,2.2646353,12z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219!16zL20vMDVxdGo?entry=ttu
     }{Paris, France}
+
+    \raggedright
+    \vspace{10pt}
+    Ayant plus de 3 ans d'expérience dans le développement Python, je suis à
+    la recherche d'un poste de développeur backend. Mon expertise inclut la
+    conception d'API, et l'intégration de systèmes. En autonomie ou en équipe,
+    j'ai l'habitude de travailler par itération jusqu'à atteindre mes objectifs
+    en suivant la méthodologie Agile.
+
 \end{center}
 
 
-%----------- WORK EXPERIENCE -----------
+%----------- DESCRIPTION -----------
 
-\section{Work Experience}
+
+
+%----------- EXPÉRIENCES PROFESSIONNELLES -----------
+
+\section{Expériences professionnelles}
   \vspace{3pt}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {6WIND}{Paris, France}
-      {Software Engineer (2.5 years)}
-      {May 2021 \textbf{--} Present, Full-time}
+      {Développeur Backend Python (2.5 années)}
+      {Mai 2021 \textbf{--} Présent, CDI}
 
         \resumeItemListStart
             \resumeItem{
-              Expanded the product metric tracking system to new monitoring
-              tools (Apache Kafka, Elasticsearch, ...) by developing a custom
-              Python API.
+              Développement d'une API Python pour l'export de métriques via
+              Telegraf vers de multiples outils de monitoring (Apache Kafka,
+              Elasticsearch, Prometheus, CloudWatch...)
             }
             \resumeItem{
-              Enhanced customers’ experience by restructuring CLI configuration
-              of network protocols (QoS, TWAMP).
+              Restructuration d'une API backend Python pour une CLI de
+              configuration de protocoles de télécommunication.
             }
             \resumeItem{
-              Demonstrated company product quality by implementing new Grafana
-              dashboards.
+              Mise en avant de la qualité et perfomance des produits de
+              l'entreprise par la conception de dashboards Grafana.
             }
         \resumeItemListEnd
 
     \resumeSubheading
-      {Appygas}{Berlin, Germany}
-      {Full Stack Developer (6 months)}
-      {Oct 2020 \textbf{--} Mar 2021, Fixed term}
+      {Appygas}{Berlin, Allemagne}
+      {Développeur full stack (6 mois)}
+      {Octobre 2020 \textbf{--} Mars 2021, CDD}
 
         \resumeItemListStart
             \resumeItem{
-              Drove the evolution of the company website main feature by
-              developing an internal Angular application for oil price
-              standardization over Europe.
+              Développement d'une application Angular deployée sur Google Cloud
+              de tarification du gaz européen.
             }
             \resumeItem{
-              Improved web crawlers' downtime detection by monitoring their
-              status in a Python/Angular application, leading to a long-term
-              increase of 10 percentage points in availability.
+              Évolution d'une application Python/Angular en charge du
+              moniotoring de crawlers web.
             }
             % \resumeItem{
-            %    Collaborated with a remote IT team to drive project success
-            %    following agile Scrum methodology.
+            %   Collaboration avec une equipe IT remote pour mener un projet
+            %   à terme en suivant la methode Agile et les Scrums
             % }
         \resumeItemListEnd
 
     \resumeSubheading
-      {CogniteAS}{Oslo, Norway}
-      {Intern Data Scientist (6 months)}
-      {Mar 2019 \textbf{--} Sep 2019, Internship }
+      {CogniteAS}{Oslo, Norvège}
+      {Data scientist (6 mois)}
+      {Mars 2019 \textbf{--} Septembre 2019, Stage }
 
         \resumeItemListStart
             \resumeItem{
-              Reduced maintenance costs of a company key customer by 500K USD by
-              engineering an ETL automation pipeline in Azure Databricks plugged
-              to a PowerBI dashboard monitoring relevant KPIs for the end user.
+              Conception d'une pipeline ETL automatisée avec Azure Databricks
+              (Pyspark) réduisant les coûts de maintenance d'un client clé par
+              3.
             }
             \resumeItem{
-              Contributed to an internal R\&D application for failure detection
-              of an oil platform by making mock-up tests.
+              Elaboration de tests de simulation pour une application de
+              détection de pannes sur platforme gazière.
             }
             \resumeItem{
-              Drafted customized PowerBI prototype dashboards in an effort to
-              answer a request for proposal.
+              Conception de prototypes de dashboards PowerBI en réponse à
+              un appel d'offre.
             }
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%----------- EDUCATION -----------
+%----------- ÉDUCATION -----------
 
-\section{Education}
+\section{Éducation}
   \vspace{3pt}
   \resumeSubHeadingListStart
 
     \resumeEducationHeading
       {IMT Mines Albi}
       {Albi, France}
-      {Master of Science \textbf{--} Major: Information Systems Management}
-      {Sep 2016 \textbf{--} Jun 2019}
+      {Master généraliste \textbf{--} Spécialité: Gestion des systèmes d'information}
+      {Septembre 2016 \textbf{--} Juin 2019}
 
     \resumeEducationHeading
       {Lycée Charlemagne}
       {Paris, France}
-      {Bachelor of Science \textbf{--} Major: Mathematics}
-      {Sep 2013 \textbf{--} Jun 2016}
+      {Classes Préparatoires CPGE \textbf{--} Filière: MPSI/MP, spécialité: informatique}
+      {Septembre 2013 \textbf{--} Juin 2016}
   \resumeSubHeadingListEnd
 
-%----------- SKILLS -----------
+%----------- COMPÉTENCES -----------
 
 
-\section{Skills}
+\section{Compétences}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming Languages:}{
+        \textbf{Languages de programmation:}{
           Python 3.6+, JavaScript (ES6), TypeScript, Bash
         } \\ \vspace{3pt}
-        \textbf{Python Development:}{
-          Django, Django REST Framework, Flask, FastAPI, Unittest, Pandas, Numpy
+        \textbf{Développement Python:}{
+          Django, Django REST Framework, Flask, FastAPI, Unittest, Pandas
         } \\ \vspace{3pt}
-        \textbf{JavaScript Development:}{
+        \textbf{Développement JavaScript:}{
           Node.js, Express.js,  Angular, React, HTML 5, CSS 3
         } \\ \vspace{3pt}
-        \textbf{Cloud Computing \& DevOps:}{
+        \textbf{Développement Cloud \& DevOps:}{
           Git, Jenkins, GitHub, Docker, GCP, AWS
         } \\ \vspace{3pt}
-        \textbf{Data Engineering:}{
+        \textbf{Ingénierie data:}{
           InfluxDB, Elasticsearch, Apache Kafka, Prometheus, Graphite, Grafana,
           Microsoft PowerBI
         } \\ \vspace{3pt}
-        \textbf{Languages:}{
-          French (native), English (full proficiency)
+        \textbf{Langues:}{
+          Français (langue natale), Anglais (niveau professionnel)
         } \\ \vspace{3pt}
-        \textbf{Interests:}{
-          Chess, Investment, Backpacking
+        \textbf{Intérêts:}{
+          Jeu d'échecs, Voyages
         } \\ \vspace{3pt}
     }}
   \resumeSubHeadingListEnd
 
 
-%----------- PROJECTS -----------
+%----------- PROJETS -----------
 
-\section{Projects}
+\section{Projets}
     \vspace{3pt}
     \resumeSubHeadingListStart
 
-      \resumeProjectHeading
-        {
-          \textbf{
-            Cryptocurrency Trading Competition (Golang, Solidity, AWS, Python,
-            GraphQL)
-          }
-        }{}
-          \resumeItemListStart
-            \resumeItem{
-              Built a trading bot in Golang with an international team of 7.
-            }
-            \resumeItem{
-              Implemented competitive buying strategies scalable to several
-              Blockchains.
-            }
+      % \resumeProjectHeading
+      %   {
+      %     \textbf{
+      %       Compétition de trading de crypto-monnaies (Golang, Solidity, AWS,
+      %       Python, GraphQL)
+      %     }
+      %   }{}
+      %     \resumeItemListStart
+      %       \resumeItem{
+      %         Conception d'un robot de trading en Golang avec un groupe de 7
+      %         personnes.
+      %       }
+      %       \resumeItem{
+      %         Implémentation d'une strategie d'achat scalable sur differentes
+      %         Blockchains.
+      %       }
             % \resumeItem{
-            %   Performed market data analysis in Python and explored selling
-            %   strategies.
+            %   Étude du marché par analyse de données en Python et exploration de
+            %   stratégies de revente.
             % }
-          \resumeItemListEnd
+          % \resumeItemListEnd
 
       \resumeProjectHeading
         {
           \textbf{
-            Photography Portfolio Website (JavaScript, Node, Express, HTML, CSS)
+            Site web professionnel de photographie (JavaScript, Node, Express,
+            HTML, CSS)
           } $|$ \emph{
             \href{
               https://github.com/lohiermichael/photography-portfolio-site
@@ -322,12 +352,13 @@
         }{}
           \resumeItemListStart
             \resumeItem{
-              Redesigned and developed a responsive professional photography
-              website.
+              Re-design et développement d'un site responsif de photographie
+              professionnel.
             }
             \resumeItem{
-              Used Google PageSpeed Insights and other optimization tools to
-              monitor and improve the website's performance.
+              Utilisation de Google PageSpeed Insights et d'autres outils
+              d'optimisation pour monitorer et améliorer les performances du
+              site Web.
             }
           \resumeItemListEnd
 
@@ -343,12 +374,13 @@
         }{}
           \resumeItemListStart
             \resumeItem{
-              Revamped the Flappy Bird game with machine learning.
+              Reconception du jeu Flappy Bird en intégrant de l'intelligence
+              artificielle.
             }
             \resumeItem{
-              Designed the game to allow the user to train its own neural
-              network with a genetic algorithm to obtain an AI bird against
-              which it can play.
+              Ajout d'une fonctionalité permettant à l'utilisateur d'entraîner
+              son propre réseau de neurones avec un algorithme génétique afin
+              d'obtenir un "flappy bird"-robot qu'il peut affronter.
             }
           \resumeItemListEnd
 
